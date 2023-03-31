@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Pizza Factory
 
 This project is built using React, React-Bootstrap and React-Icons
 
