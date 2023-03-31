@@ -1,38 +1,153 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Pizza";  
+  src: local("OrderPizza"),
+    url("./font/OrderPizza.ttf") format("truetype");
+}
+/* CSS for the HomePage Component */
+.highlight{
+  color: yellow;
+}
+.title{
   text-align: center;
+  color:aliceblue;
+  padding: 25px 10px;
+  font-family: 'Pizza';
+}
+.pizza-title{
+  color: aliceblue;
+  padding: 70px 20px;
+  font-family: 'Pizza';
+  margin: 35px 30px;
+}
+.pizza-title h1{
+  line-height: 80px;
+}
+.order-btn{
+  background-color: red;
+  text-align: center;
+  padding: 15px 15px;
+  cursor: pointer;
+  border: none;
+  color: aliceblue;
+  border-radius: 5px;
+  font-family: 'Pizza';
+}
+.order-btn:hover{
+  background-color: yellow;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-main {
+  opacity: 0.9;
+  background-image: url('./Assests/Pizza.jpeg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width:600px){
+  .pizza-title{
+    color: aliceblue;
+    padding: 50px 20px;
+    font-family: 'Pizza';
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .pizza-title h1{
+    line-height: 50px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* CSS for the OrderPage Component */
+/* OrderPage.css */
+.main-div{
+  background-color: yellow;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.order-header{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  box-shadow: 10px black;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+.view-cart-btn{
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  border: none;
+  background-color: rgb(40, 146, 40);
   color: white;
 }
+.view-cart-btn:hover{
 
-.App-link {
-  color: #61dafb;
+  background-color: green
+}
+.pizza-row{
+  margin-top: 20px;
+  padding: 10px 10px;
+  background-color: white;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.pizza-row:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pizza-card-header{
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px;
+  font-size: 1px;
+}
+.add-to-cart-btn{
+  background-color: rgb(40, 146, 40);
+}
+.add-to-cart-btn:hover{
+
+  background-color: green
+}
+.price{
+  color: green;
+  font-weight: 500;
+}
+.order-header{
+  font-family: 'Pizza';
+}
+.h4-margin{
+  padding-top: 10px;
+}
+input[type="checkbox"] {
+  accent-color: green
   }
-  to {
-    transform: rotate(360deg);
-  }
+.container-class{
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.total-cost{
+  font-weight: 500;
+  text-align: right;
+}
+.cart-item{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 10px 10px;
+}
+.cart-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.weight{
+  font-weight: 500;
 }
